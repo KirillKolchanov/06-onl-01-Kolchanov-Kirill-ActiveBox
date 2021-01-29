@@ -1,4 +1,6 @@
 @import url("/app/css/masterhead.css");
+@import url("/app/css/features.css");
+@import url("/app/css/team.css");
 
 .container {
   max-width: 1170px;

@@ -1,21 +1,20 @@
 .masterhead {
   background: url(/app/images/masterhead-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   position: relative;
 }
 
 .header-container {
-  /* padding: 40px 0; */
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .masterhead-content__container {
   padding: 150px 0;
-  width: 915px;
+  max-width: 915px;
   margin: 0 auto;
 }
 
@@ -49,6 +48,7 @@
   margin-bottom: 80px;
   color: #ffffff;
   opacity: 0.75;
+  line-height: 33px;
 }
 
 .masterhead-content__button {
