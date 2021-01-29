@@ -1,0 +1,25 @@
+.team-container {
+    padding: 100px 0;
+  }
+
+  .team-card {
+    width: 270px;
+  }
+
+  .team-card__title {
+    color: #2d3033;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  .team-card__subtitle {
+    color: #e84545;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+  .team-card__description {
+    color: #6c7279;
+    margin-top: 30px;
+    opacity: 0.9;
+    line-height: 21px;
+  }

@@ -1,6 +1,6 @@
-@import url("/app/css/masterhead.css");
-@import url("/app/css/features.css");
-@import url("/app/css/team.css");
+@import url("./masterhead.scss");
+@import url("./features.scss");
+@import url("./team.scss");
 
 .container {
   max-width: 1170px;
@@ -40,4 +40,8 @@ body {
   font-family: 'Raleway';
   font-size: 14px;
   font-weight: 400;
+}
+
+.container-size {
+    font-size: 16px;
 }

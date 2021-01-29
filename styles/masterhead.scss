@@ -1,0 +1,63 @@
+.masterhead {
+    background: url(/app/images/masterhead-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  .masterhead-content__container {
+    padding: 150px 0;
+    max-width: 915px;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    padding: auto 0;
+    line-height: 100px;
+  }
+
+  .header-logo {
+    margin: auto 0;
+  }
+
+  .nav-menu__link {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: 0.75;
+  }
+
+  .masterhead-content__title {
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .masterhead-content__subtitle {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: #ffffff;
+    opacity: 0.75;
+    line-height: 33px;
+  }
+
+  .masterhead-content__button {
+    display: block;
+    background-color: #e84545;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    line-height: 45px;
+    color: #ffffff;
+    margin: 0 auto;
+  }
