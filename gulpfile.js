@@ -4,8 +4,11 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const includeFile = require('gulp-file-include');
 const browsersync = require('browser-sync').create();
+
+const HTML_PATH = ['./**/*.html', '!dist/index.html'];
 const SCSS_PATH = './styles/**/*.scss';
 const IMAGES_PATH = './images/**/*.{gif,jpg,png,svg}';
+
 
 function htmlTask() {
   return src('index.html')
@@ -42,7 +45,7 @@ function reloadTask(cb) {
 }
 
 function watchTask(){
-  watch('*.html', series(htmlTask, reloadTask));
+  watch(HTML_PATH, series(htmlTask, reloadTask));
   watch(SCSS_PATH, series(scssTask, reloadTask));
   watch(IMAGES_PATH, series(imagesTask, reloadTask));
 }
