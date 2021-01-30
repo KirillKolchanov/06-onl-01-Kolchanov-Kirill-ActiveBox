@@ -4,6 +4,7 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const includeFile = require('gulp-file-include');
 const browsersync = require('browser-sync').create();
+const ghPages = require('gulp-gh-pages');
 
 const HTML_PATH = ['./**/*.html', '!dist/index.html'];
 const SCSS_PATH = './styles/**/*.scss';
@@ -44,6 +45,11 @@ function reloadTask(cb) {
   cb();
 }
 
+function deployTask() {
+  return src('./dist/**/*')
+    .pipe(ghPages());
+}
+
 function watchTask(){
   watch(HTML_PATH, series(htmlTask, reloadTask));
   watch(SCSS_PATH, series(scssTask, reloadTask));
@@ -51,3 +57,4 @@ function watchTask(){
 }
 
 task('default', series(parallel(scssTask, imagesTask, htmlTask), serveTask, watchTask));
+task('deploy', deployTask)
