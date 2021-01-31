@@ -10,22 +10,19 @@
 .feature-card {
   width: 300px;
   margin-bottom: 75px;
-}
-
-.feature-card__img {
-  text-align: center;
-}
-
-.feature-card__title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #2d3033;
-  font-weight: 700;
-  margin: 35px 0 25px;
-}
-
-.feature-card__subtitle {
-  text-align: center;
-  color: #6c7279;
-  line-height: 21px;
+  &__img {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #2d3033;
+    font-weight: 700;
+    margin: 35px 0 25px;
+  }
+  &__subtitle {
+    text-align: center;
+    color: #6c7279;
+    line-height: 21px;
+  }
 }

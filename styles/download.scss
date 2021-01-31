@@ -1,25 +1,25 @@
-.download-container {
-  padding: 100px 0;
-}
+.download {
+  &-container {
+    padding: 100px 0;
+  }
+  &-title {
+    color: #2d3033;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &-subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    color: #2d3033;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
 
-.download-title {
-  color: #2d3033;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-
-.download-subtitle {
-  text-transform: uppercase;
-  text-align: center;
-  color: #2d3033;
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
-.download-button {
-  width: 280px;
-  line-height: 45px;
-  margin: 0 auto;
+  &-button {
+    width: 280px;
+    line-height: 45px;
+    margin: 0 auto;
+  }
 }
