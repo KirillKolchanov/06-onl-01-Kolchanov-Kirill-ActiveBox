@@ -6,7 +6,7 @@ const includeFile = require('gulp-file-include');
 const browsersync = require('browser-sync').create();
 
 const HTML_PATH = ['./**/*.html', '!dist/index.html'];
-const SCSS_PATH = './styles/**/*.scss';
+const SCSS_PATH = './styles/*.scss';
 const IMAGES_PATH = './images/**/*.{gif,jpg,png,svg}';
 
 function htmlTask() {
@@ -16,7 +16,7 @@ function htmlTask() {
 }
 
 function scssTask() {
-  return src(SCSS_PATH, { sourcemaps: true })
+  return src('./styles/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(concat('styles.css'))
     .pipe(sass())

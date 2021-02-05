@@ -24,4 +24,20 @@
     opacity: 0.9;
     line-height: 21px;
   }
+  &__social {
+    margin-top: 30px;
+    display: flex;
+    &-icons-item {
+      border: 1px solid #e8ecee;
+      width: 40px;
+      line-height: 40px;
+      margin-right: 4px;
+      text-align: center;
+    }
+    &-icon {
+      font-size: 18px;
+      color: #c6cacc;
+    }
+  }
 }
+
