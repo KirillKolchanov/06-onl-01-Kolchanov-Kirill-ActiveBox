@@ -15,8 +15,36 @@
   @include('./html/features.html')
   @include('./html/works.html')
   @include('./html/team.html')
+  @include('./html/clients.html')
   @include('./html/download.html')
   @include('./html/footer.html')
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    const dotsParentContainer = document.querySelector('.slider');
+
+    $(document).ready(function () {
+      $('.clients__slider').slick({
+        dots:true,
+        speed: 200,
+        arrows: false
+      });
+    });
+
+    $(document).ready(function () {
+      $('.works__slider').slick({
+        dots:false,
+        speed: 200,
+        arrows: true
+      });
+    });
+  </script>
+
+
+
 
 </body>
 
