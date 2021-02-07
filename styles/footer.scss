@@ -10,6 +10,12 @@
   display: flex;
   justify-content: space-between;
 
+  @media screen and (max-width: 1190px) {
+    width: 900px;
+    padding: 40px 0 30px;
+    justify-content: space-around;
+  }
+
   &__location{
     width: 200px;
     text-align: center;
@@ -18,6 +24,10 @@
       color: #ffffff;
       font-weight: 700;
       margin-bottom: 22px;
+
+      @media screen and (max-width: 1190px) {
+        margin-bottom: 16px;
+      }
     }
     &-subtitle{
       opacity: 0.5;
@@ -43,10 +53,20 @@
         border: 2px solid #ffffff;
         text-align: center;
         line-height: 40px;
+
+        @media screen and (max-width: 1190px) {
+          width: 30px;
+          line-height: 30px;
+          border: 1px solid #ffffff;
+        }
       }
       &-icon {
         color: #ffffff;
         font-size: 18px;
+
+        @media screen and (max-width: 1190px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -54,11 +74,16 @@
   &__activebox {
     width: 200px;
     text-align: center;
+
     &-title {
       color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 22px;
+
+      @media screen and (max-width: 1190px) {
+        margin-bottom: 20px;
+      }
     }
     &-subtitle {
       color: #ffffff;

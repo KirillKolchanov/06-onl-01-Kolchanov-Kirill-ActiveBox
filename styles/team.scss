@@ -3,10 +3,20 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 1190px) {
+    padding: 80px;
+    justify-content: space-around;
+  }
 }
 
 .team-card {
   width: 270px;
+
+  @media screen and (max-width: 1190px) {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
 
   &__title {
     color: #2d3033;

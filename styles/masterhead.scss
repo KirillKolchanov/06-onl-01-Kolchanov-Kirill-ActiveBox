@@ -10,10 +10,17 @@
       padding: 150px 0;
       max-width: 915px;
       margin: 0 auto;
+      @media screen and (max-width: 1190px) {
+        padding: 80px;
+      }
     }
     &__title {
       text-align: center;
       color: #ffffff;
+
+      @media screen and (max-width: 1190px) {
+        font-size: 40px;
+      }
     }
     &__subtitle {
       text-align: center;
@@ -22,6 +29,11 @@
       color: #ffffff;
       opacity: 0.75;
       line-height: 33px;
+
+      @media screen and (max-width: 1190px) {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
     }
     &__button {
       display: block;
@@ -30,8 +42,13 @@
       text-align: center;
       width: 200px;
       line-height: 45px;
-      color: #ffffff;
+      color: #110d0d;
       margin: 0 auto;
+      @media screen and (max-width: 1190px) {
+        width: 60%;
+        line-height: 50px;
+        font-size: 18px;
+      }
     }
   }
 }
